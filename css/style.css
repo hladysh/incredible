@@ -1,0 +1,457 @@
+@font-face {
+    font-family: Museo Sans;
+    src: url(../font/MuseoSans_500.otf);
+    font-family: 500px;
+}
+
+.logo:after,
+.log_in:after,
+.container:after,
+.content_item:after,
+.content_item img:after,
+.text_wrap:after,
+.text_rigt .h5_line:after,
+.content_item ul li:after,
+.header_h1:after, 
+.grid:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body {
+	font-family: "Museo Sans",Arial,  sans-serif;
+}
+
+img {
+	width: 100%;
+}
+/* ==========================================================================
+Header
+========================================================================== */
+header {
+	min-height: 750px;
+	background: url(../img/bg_header.jpg) no-repeat center center ;
+	background-size: cover;
+	
+}
+
+.container {
+	/*min-width: 1366px;*/
+	width: 100%;
+}
+.wrap {
+	width: 100%;
+	min-height: 100px;
+}
+.logo {
+	display: inline-block;
+	float: left;
+	height: 40px;
+	width: 240px;
+	margin: 35px 0 0 150px;
+}
+.log_in {
+	height: 40px;
+	width: 315px;
+	border: 3px solid #fff;
+	border-radius: 17px;
+	float: right;
+	margin: 35px 150px 0 ;
+}
+.icon_fa {
+	height: 18px;
+	width: 11px;
+	background: url(../img/spites.png) no-repeat ;
+	background-position: 0px 0px;
+	cursor: pointer;
+	float: left;
+	line-height: 25px;
+	margin: 11px 17px 0 34px;
+}
+
+.log_in a {
+	font-size: 14px;
+	line-height: 40px;
+	color: #fff;
+	letter-spacing: 2.8px;
+	text-transform: uppercase;
+	text-decoration: none;
+	cursor: pointer;
+}
+.log_in a:hover {
+	color: blue;
+}
+
+.header_h1 {
+	color: #fff;
+	font-size: 70px;
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 200px;
+	font-weight: 900;
+	/*font-family: "Museo Sans",Arial,  sans-serif;*/
+}
+.text_content {
+	color: #c9ced3;
+	font-size: 16px;
+	line-height: 30px;
+	text-align: center;
+	margin-top: 25px;
+	text-transform: uppercase;
+	/*font-family: "Museo Sans",Arial,  sans-serif;*/
+}
+
+
+
+
+
+
+/* ==========================================================================
+sign_up
+========================================================================== */
+.sign_up_content {
+	width: 83%;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.sign_up_content .text_content{
+	color: #404040;
+	margin-bottom: 20px;
+}
+.sign_up_content .log_in {
+	background-color: #48598d;
+	float: none;
+	margin: 0 auto;
+}
+.sign_up_content .log_in:hover a {
+	text-shadow: 0px -1px 1px #fff;
+	color: #fff;
+}
+
+/* ==========================================================================
+content
+========================================================================== */
+.content {
+	min-height: 2000px;
+}
+.content_item {
+	position: relative;
+	width: 50%;
+	float: left;
+	min-height: 505px;
+	background-color: #f1f4f5;
+}
+.content_item:nth-child(odd) {
+	float: right;
+	clear: both;
+}
+.content_item  img {
+        width: 100%;
+        height: 505px;
+        vertical-align: middle;
+}
+.container .content_item button.prev,
+.container .content_item button.next {
+	position: absolute;
+    top: 0;
+    right: 0px;
+    margin: 20px;
+    width: 41px;
+    height: 41px;
+    border: none;
+    outline: none;
+    background: url(../img/spites.png) no-repeat center center;
+    background-position: -54px 0px;
+    cursor: pointer;
+}
+.container .content_item button.prev {
+	margin-right: 65px;
+	background-position: -14px 0px;
+}
+.container .content_item button.prev:hover {
+	background-position: -12px -40px;
+	transition: all 0.2s;
+}
+.container .content_item button.next:hover{
+	background-position: -54px -40px;
+	transition: all 0.2s;
+}
+.content_item ul li {
+	list-style-type: none;
+}
+.text_wrap {
+	margin: 85px 0 0 90px;
+}
+.text_wrap h2{
+	font-size: 45px;
+	color: #404040;
+	text-transform: uppercase;
+}
+.text_wrap h5 {
+	color: #707d84;
+	font-size: 19px;
+	margin-top: 17px;
+	text-decoration: underline;
+	text-transform: uppercase;
+}
+.h5_line {
+	margin: 30px 0 30px 0;
+	width: 35px;
+	border-bottom: 1px solid #bdbfc1;
+}
+.text_wrap p {
+	line-height: 27px;
+    width: 90%;
+}
+.text_rigt {
+	text-align: right;
+	margin: 85px 90px 0 0 ;
+	float: right;
+}
+.text_rigt .h5_line {
+	    margin: 45px 0px 16px 0;
+    width: 35px;
+    border-bottom: 1px solid #bdbfc1;
+    float: right;
+}
+.text_rigt p {
+	    margin-top: 80px;
+	    margin-left: 10%;
+}
+
+/* ==========================================================================
+sail
+========================================================================== */
+.sail {
+	text-align: center;
+	margin-bottom: 100px;
+}
+.sail h2 {
+
+	font-size: 43px;
+	margin-top: 100px;
+	margin-bottom: 50px;
+	text-transform: uppercase;
+}
+.sail p {
+	font-size: 18px;
+	line-height: 30px;
+	width: 70%;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	letter-spacing: 1.3px;
+	color: #404040;
+	text-decoration: underline;
+}
+
+[class*='col-'] {
+    float: left;
+}
+.col-2-6 {
+    width: 25%;
+    margin: 0 auto;
+    position: relative;
+    margin-left: 2%;
+	margin-bottom: 60px;
+}
+.col-2-6:nth-child(3n+1) {
+	margin-left: 10%;
+}
+
+.col-2-6:nth-child(3n+3) {
+	margin-right: 10%;
+}  
+.grid img {
+    min-height: 243px;
+    position: relative;
+}
+
+.image-block {
+    position: relative;
+}
+.image-block img {
+    width: 100%;
+    display: block;
+    outline:1px solid #b6cef1;
+	outline-offset:-6px;
+	max-height: 243px;
+}
+
+
+.image-block h3 {
+    font-size: 22px;
+    color: #fff;
+    margin-top: 110px;
+    text-transform: uppercase;
+    position: absolute;
+    z-index: 111;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    cursor: pointer;
+}
+.image-block:hover .img_hover {
+	visibility: visible;
+    opacity: 1;
+   	outline-offset: -6px;
+	outline: 6px solid #f1f4f5;
+	transition: all 0.5s; 
+}
+.image-block:hover h3 {
+	margin-top: 50px;
+	transition: all 0.5s; 
+}
+.img_hover {
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    background: rgba(24, 197, 255, 0.6) ;
+    bottom: 0;
+    top: 0;
+    padding: 6px;
+    right: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    cursor: pointer;
+    padding: 40px 0;
+}
+.img_hover p {
+    font-size: 13px;
+    color: #fff;
+    line-height: 20px;
+    text-decoration: none;
+    margin-top: 60px;
+}
+.grid .people_text {
+	position: absolute;
+	font-size: 16px;
+	text-align: left;
+	color: #404040;
+	text-decoration: none;
+	letter-spacing: 0.5px;
+	margin: 10px 0  0 10px;
+}
+.quotes {
+	width: 38px;
+	height: 25px;
+	background: url(../img/spites.png)no-repeat center center;
+	background-position: -13px -3px;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+.about {
+	margin: 0 auto;
+}
+.sail .about img {
+	height: 120px;
+	width: 120px;
+	border-radius: 50%;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+.about .log_in,
+.join_now .log_in  {
+    background-color: #48598d;
+    float: none;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+/* ==========================================================================
+bg_special join_now
+========================================================================== */
+
+
+.bg_special {
+	min-height: 400px;
+	width: 100%;
+	text-align: center;
+	background: url(../img/bg_special.jpg) no-repeat center center;
+	vertical-align: middle;
+}
+.bg_special h2,
+.join_now h3  {
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 900;
+    letter-spacing: 2.5px;
+    margin-bottom: 48px;
+    padding-top: 50px;
+}
+.bg_special p,
+.join_now  p {
+    width: 65%;
+    color: #fff;
+    font-size: 17px;
+    line-height: 40px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+
+.join_now {
+	text-align: center;
+	margin: 50px 0;
+	border-bottom: 1px solid #bdbfc1;
+}
+.join_now h3 {
+    color: #000;
+}
+.join_now  p {
+	color: #000;
+	width: 70%;
+}
+.join_now .log_in {
+	margin-bottom: 80px;
+}
+
+/* ==========================================================================
+footer
+========================================================================== */
+
+footer {
+	width: 85%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    height: 50px;
+}
+footer p {
+	float: left;
+}
+footer ul li {
+	display: inline-block;
+	text-decoration: none;
+	float: right;
+}
+footer ul li a {
+	float: right;
+	margin-right: 10px;
+	height: 20px;
+	width: 23px;
+	background: url(../img/spites.png) no-repeat center center ;
+	background-position: 0px -31px;
+	cursor: pointer;
+}
+footer ul li .facebook {
+	background-position: -25px -31px;
+    width: 14px;
+}
+footer ul li .pinterest {
+	background-position: -37px -31px;
+}
+footer ul li .twiter {
+	background-position: 1px -31px;
+}
+footer ul li .linkedin {
+	background-position: -58px -31px;
+}
+.icon_wrap {
+	margin-bottom: 40px;
+}
