@@ -137,6 +137,11 @@ content
 .content {
 	min-height: 2000px;
 }
+/*.content_item_wrap {
+    display: flex; 
+    flex-direction: column; 
+}*/
+
 .content_item {
 	position: relative;
 	width: 50%;
@@ -173,10 +178,12 @@ content
 }
 .container .content_item button.prev:hover {
 	background-position: -12px -40px;
+	-webkit-transition: all 0.2s;
 	transition: all 0.2s;
 }
 .container .content_item button.next:hover{
 	background-position: -54px -40px;
+	-webkit-transition: all 0.2s;
 	transition: all 0.2s;
 }
 .content_item ul li {
@@ -299,10 +306,12 @@ sail
     opacity: 1;
    	outline-offset: -6px;
 	outline: 6px solid #f1f4f5;
+	-webkit-transition: all 0.5s;
 	transition: all 0.5s; 
 }
 .image-block:hover h3 {
 	margin-top: 50px;
+	-webkit-transition: all 0.5s;
 	transition: all 0.5s; 
 }
 .img_hover {
@@ -424,6 +433,7 @@ footer {
 }
 footer p {
 	float: left;
+	line-height: 35px;
 }
 footer ul li {
 	display: inline-block;
